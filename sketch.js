@@ -61,7 +61,7 @@ let rColor;
 let dColor;
 
 function setup() {
-  createCanvas(730, simHeight + graphHeight);
+  createCanvas(max(730, windowWidth - 20), simHeight + graphHeight);
 
   sColor = color("DodgerBlue");
   eColor = color(200, 200, 0);
