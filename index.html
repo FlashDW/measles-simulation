@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <div id="info-overlay">
+  <div id="info-panel" role="dialog" aria-modal="true"
+       aria-labelledby="info-title">
+
+    <button id="close-info" aria-label="Close information">
+      &times;
+    </button>
+
+    <h1 id="info-title">Measles Simulation</h1>
+    <p class="subtitle">
+      Explore how vaccination affects the spread of measles.
+    </p>
+
+    <div class="info-grid">
+      <section>
+        <h2>How It Works</h2>
+        <p>
+          Each dot represents a person with a vaccination status
+          and a disease stage. When people get close together,
+          measles can spread according to the simulation's rules.
+        </p>
+
+        <h2>Disease Stages</h2>
+        <p>🔵 Susceptible — can become infected.</p>
+        <p>🟡 Exposed — infected, but not yet infectious.</p>
+        <p>🔴 Infectious — can spread the virus.</p>
+        <p>🟣 Recovered — recovered from infection.</p>
+        <p>⚫ Dead — died during the simulated outbreak.</p>
+
+        <h2>Vaccination</h2>
+        <p>
+          Vaccination reduces the probability of infection
+          in this model. Real-world vaccine effectiveness
+          depends on the number of doses received. 
+
+        </p> 
+        <h2>Symbols</h2>
+        <span class="vax-icon"></span> 
+        Green outline — vaccinated.
+        <p>
+          <span class="hospital-icon">
+            🔴
+            <span class="hospital-cross"></span>
+          </span>
+          White cross — hospitalized.
+        </p>
+      </section>
+
+      <section>
+        <h2>Real-World Facts</h2>
+        <p>Incubation: typically around 11–12 days until symptoms.</p>
+        <p>Infectious period: about 4 days before through 4 days after rash onset.</p>
+        <p>Two MMR doses: approximately 97% effective against measles.</p>
+
+        <h2>Controls</h2>
+        <p>Population — number of people in the simulation.</p>
+        <p>Vaccination — percentage vaccinated.</p>
+        <p>Initial infections — number infected at the start.</p>
+
+        <h2>Model Limitations</h2>
+        <p>
+          This is a simplified educational model. Its results
+          depend on assumptions about movement, transmission,
+          hospitalization, and mortality. They are not forecasts.
+        </p>
+
+        <h2>Sources</h2>
+        <p>
+          <a href="https://www.cdc.gov/measles/about/index.html"
+             target="_blank" rel="noopener noreferrer">
+            CDC — About Measles
+          </a>
+        </p>
+        <p>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28757186/" target="_blank" rel="noopener noreferrer"> National Library of Medicine</a>
+        </p>
+        <p>
+          <a href="https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-7-measles.html" target="_blank" rel="noopener noreferrer"> CDC — Manual for the Surveillance of Vaccine-Preventable Diseases</a>
+        </p>
+      </section>
+    </div>
+
+  </div>
+</div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
